@@ -1,0 +1,61 @@
+.todoItem {
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 10px;
+	border-radius: 50px;
+	border: 2px solid rgb(5, 3, 3);
+	transition: border 100ms;
+	margin-top: 10px;
+}
+
+.todoItem:hover {
+	/* border: 2px solid rgb(100, 4, 102); */
+	border: 2px solid rgb(128, 0, 130);
+}
+
+.todoItem p {
+	cursor: default;
+}
+
+.todoItem .MuiSvgIcon-root {
+	margin-right: 16px;
+}
+
+.todoItem--left {
+	display: flex;
+	align-items: center;
+}
+
+.todoItem--left > p {
+	font-weight: 500;
+}
+
+.todoItem--right {
+	display: flex;
+	/* justify-items: flex-end; */
+	align-items: center;
+}
+
+.timeDuration {
+	display: flex;
+}
+
+.timeDuration > p {
+	margin-right: 10px;
+	font-weight: 400;
+}
+
+.timeDuration > input {
+	width: 20px;
+	padding: 5px 10px;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+.timeDuration > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
